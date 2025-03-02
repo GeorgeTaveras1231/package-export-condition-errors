@@ -1,0 +1,39 @@
+{
+  "name": "node-package",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./err/import": {
+      "import": "./error.js",
+      "node": "./success.js"
+    },
+    "./err/env-import": {
+      "import": "./error.js",
+      "development": "./success.js"
+    },
+    "./err/require": {
+      "require": "./error.cjs",
+      "node": "./success.cjs"
+    },
+    "./err/env-require": {
+      "require": "./error.cjs",
+      "development": "./success.cjs"
+    },
+    "./good/import": {
+      "node": "./success.js",
+      "import": "./error.js"
+    },
+    "./good/env-import": {
+      "development": "./success.js",
+      "import": "./error.js"
+    },
+    "./good/require": {
+      "node": "./success.cjs",
+      "require": "./error.cjs"
+    },
+    "./good/env-require": {
+      "development": "./success.cjs",
+      "require": "./error.cjs"
+    }
+  }
+}

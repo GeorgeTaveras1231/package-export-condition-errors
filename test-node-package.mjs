@@ -2,19 +2,35 @@ import { runCases } from "./runner.mjs"
 
 runCases([
   {
-    request: 'broken-node-package/require',
+    request: 'node-package/err/require',
     type: 'require'
   },
   {
-    request: 'broken-node-package/import',
+    request: 'node-package/err/import',
     type: 'import'
   },
   {
-    request: 'proper-node-package/require',
+    request: 'node-package/err/env-require',
     type: 'require'
   },
   {
-    request: 'proper-node-package/import',
+    request: 'node-package/err/env-import',
     type: 'import'
-  }
+  },
+  {
+    request: 'node-package/good/require',
+    type: 'require'
+  },
+  {
+    request: 'node-package/good/import',
+    type: 'import'
+  },
+  {
+    request: 'node-package/good/env-require',
+    type: 'require'
+  },
+  {
+    request: 'node-package/good/env-import',
+    type: 'import'
+  },
 ])

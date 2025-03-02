@@ -1,7 +1,9 @@
 {
   "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "test": "node -C development test-node-package.mjs"
+  },
   "dependencies": {
-    "broken-node-package": "file:./packages/broken-node-package",
-    "proper-node-package": "file:./packages/proper-node-package"
+    "node-package": "file:./packages/node-package"
   }
 }
