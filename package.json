@@ -1,0 +1,7 @@
+{
+  "packageManager": "yarn@4.7.0",
+  "dependencies": {
+    "broken-node-package": "file:./packages/broken-node-package",
+    "proper-node-package": "file:./packages/proper-node-package"
+  }
+}
